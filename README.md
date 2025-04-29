@@ -55,7 +55,7 @@ python3 main.py INTEGRATED-DATASET.csv <min_sup> <min_conf>
 ```
 
 where,<br>
-`[min_sup]` and `<min_conf>` are both numbers between 0 and 1, signifying minimum support for itemset generation from the market baskets and minimum confidence for the association rules respectively.
+`<min_sup>` and `<min_conf>` are both numbers between 0 and 1, signifying minimum support for itemset generation from the market baskets and minimum confidence for the association rules respectively.
 
 **Note**<br>
 1. The above instructions are mentioned for macOS / Linux systems. Run the appropriate commands if you are using a Windows System.
@@ -80,7 +80,7 @@ The dataset used to generate the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv
 
 ### (b) Dataset Transformation
 
-To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following high-level preprocessing and transformation steps were applied:
+To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following high-level preprocessing and transformation steps were applied in [preprocess.py](preprocess.py):
 
 1. **Filtering by Date**
 - Only records where the `Issue Date` is **March 1st, 2025** were retained. <br>
@@ -162,7 +162,7 @@ The [apriori()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/b
 The [count_support()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L37) function computes the support of candidate itemsets by scanning the transactions, and [filter_frequent_itemsets()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L47) retains those above the minimum support threshold.
 
 ### Rule Generation
-The [get_rules()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L131) function generates association rules from frequent itemsets by computing confidence and filtering rules above the minimum confidence threshold. It uses support values directly, avoiding additional transaction scans.
+The [generate_rules()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L131) function generates association rules from frequent itemsets by computing confidence and filtering rules above the minimum confidence threshold. It uses support values directly, avoiding additional transaction scans.
 
 ### Output
 The results (frequent itemsets and rules) are written to an [output.txt](output.txt) file, formatted as specified, with support percentages and confidence for rules.
@@ -171,7 +171,7 @@ The results (frequent itemsets and rules) are written to an [output.txt](output.
 
 Several sophisticated enhancements were implemented based on Chapter 6 of [Mining of Massive Datasets (MMDS)](http://infolab.stanford.edu/~ullman/mmds/ch6.pdf):
 
-1. **Hierarchical Item Relationships** (Implemented in `load_transactions()`)
+1. **Hierarchical Item Relationships** (Implemented in [load_transactions()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L6))
    - Created a composite item: `Violation_<Code>_<Description>`
    - Created a hierarchical item: `<FineLevel>_Violation_<Code>_<Description>`<br><br>
 
@@ -182,7 +182,7 @@ Several sophisticated enhancements were implemented based on Chapter 6 of [Minin
     - Enables interpretable rules such as:  
     `[Manhattan, SUV] => [HighFine_Violation_40_DOUBLE_PARKING]`<br><br>
 
-2. **Maximal Frequent Itemsets** (Implemented in `find_maximal_frequent_itemsets()` and `generate_rules()`)
+2. **Maximal Frequent Itemsets** (Implemented in [find_maximal_frequent_itemsets()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L80) and [generate_rules()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L131))
    - Identified only **maximal frequent itemsets** for rule generation.
    - Eliminated subset-based redundancy by skipping non-maximal sets.
    - Ensured that RHS of rules never includes **hierarchical items**.<br><br>
@@ -192,7 +192,7 @@ Several sophisticated enhancements were implemented based on Chapter 6 of [Minin
     - Reduces computational overhead during rule generation.
     - Improves clarity and reduces duplication in resulting rules.<br><br>
 
-3. **Pruning of Trivial and Redundant Rules** (Implemented in `generate_rules()`)
+3. **Pruning of Trivial and Redundant Rules** (Implemented in [generate_rules()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L131))
 
    - Skipped rules where the RHS was implied by the LHS due to hierarchical structure.
    - Example excluded rule:
