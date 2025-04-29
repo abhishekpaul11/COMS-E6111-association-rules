@@ -1,0 +1,249 @@
+==Frequent itemsets (min_sup=5.0%)
+[Morning], 64.2%
+[SUV], 55.1%
+[Medium Fine], 40.2%
+[Sedan], 35.5%
+[Morning,SUV], 34.7%
+[Low Fine], 32.0%
+[Manhattan], 31.8%
+[Night], 28.2%
+[High Fine], 27.8%
+[Medium Fine,Morning], 26.4%
+[Morning,Sedan], 23.3%
+[Bronx], 23.1%
+[Queens], 23.0%
+[Medium Fine,SUV], 22.5%
+[Brooklyn], 20.5%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Low Fine,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Violation_38_FAIL TO DSPLY MUNI METER RECPT], 20.4%
+[Low Fine,Morning], 20.1%
+[Manhattan,Morning], 19.5%
+[Low Fine,SUV], 18.4%
+[High Fine,Morning], 17.7%
+[Manhattan,SUV], 16.9%
+[Night,SUV], 16.1%
+[Morning,Queens], 15.5%
+[Medium Fine,Morning,SUV], 14.8%
+[Medium Fine,Sedan], 14.6%
+[Bronx,Medium Fine], 14.4%
+[High Fine,SUV], 14.3%
+[Brooklyn,Morning], 13.9%
+[Bronx,Morning], 13.9%
+[Bronx,SUV], 12.8%
+[Low Fine,Manhattan], 12.6%
+[Queens,SUV], 12.5%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Medium Fine,Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Violation_71_INSP. STICKER-EXPIRED/MISSING], 12.2%
+[Brooklyn,SUV], 12.1%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,SUV], 11.8%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.8%
+[Low Fine,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.8%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,SUV], 11.8%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.8%
+[SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.8%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning], 11.6%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.6%
+[Low Fine,Morning,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning], 11.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.6%
+[Morning,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 11.6%
+[Low Fine,Morning,SUV], 11.2%
+[Medium Fine,Night], 10.6%
+[High Fine,Sedan], 10.6%
+[Low Fine,Sedan], 10.3%
+[High Fine,Manhattan], 10.3%
+[Manhattan,Morning,SUV], 10.0%
+[Manhattan,Sedan], 9.9%
+[Manhattan,Night], 9.8%
+[High Fine,High Fine_Violation_40_FIRE HYDRANT], 9.7%
+[High Fine,High Fine_Violation_40_FIRE HYDRANT,Violation_40_FIRE HYDRANT], 9.7%
+[High Fine,Violation_40_FIRE HYDRANT], 9.7%
+[High Fine_Violation_40_FIRE HYDRANT], 9.7%
+[High Fine_Violation_40_FIRE HYDRANT,Violation_40_FIRE HYDRANT], 9.7%
+[Violation_40_FIRE HYDRANT], 9.7%
+[Medium Fine,Morning,Sedan], 9.7%
+[Night,Sedan], 9.7%
+[Low Fine,Night], 9.5%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning], 9.4%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,Violation_71_INSP. STICKER-EXPIRED/MISSING], 9.4%
+[Medium Fine,Morning,Violation_71_INSP. STICKER-EXPIRED/MISSING], 9.4%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning], 9.4%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,Violation_71_INSP. STICKER-EXPIRED/MISSING], 9.4%
+[Morning,Violation_71_INSP. STICKER-EXPIRED/MISSING], 9.4%
+[Manhattan,Medium Fine], 8.9%
+[Bronx,Sedan], 8.8%
+[High Fine,Morning,SUV], 8.7%
+[Queens,Sedan], 8.7%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Manhattan], 8.6%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Manhattan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 8.6%
+[Low Fine,Manhattan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 8.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Manhattan], 8.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Manhattan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 8.6%
+[Manhattan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 8.6%
+[Low Fine,Queens], 8.5%
+[Morning,Queens,SUV], 8.3%
+[Medium Fine,Queens], 8.2%
+[Low Fine,Low Fine_Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[Low Fine,Low Fine_Violation_21_NO PARKING-STREET CLEANING,Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[Low Fine,Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[Low Fine_Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[Low Fine_Violation_21_NO PARKING-STREET CLEANING,Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[Violation_21_NO PARKING-STREET CLEANING], 8.1%
+[High Fine,Night], 8.1%
+[Brooklyn,Morning,SUV], 8.1%
+[Bronx,Medium Fine,SUV], 8.1%
+[Bronx,Medium Fine,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Medium Fine,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Medium Fine,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Medium Fine,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Medium Fine,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Medium Fine,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Violation_36_PHTO SCHOOL ZN SPEED VIOLATION], 8.1%
+[Bronx,Medium Fine,Morning], 8.0%
+[Afternoon], 7.6%
+[Bronx,Morning,SUV], 7.6%
+[Bronx,Night], 7.5%
+[Brooklyn,Medium Fine], 7.5%
+[Brooklyn,Sedan], 7.4%
+[Low Fine,Low Fine_Violation_21_NO PARKING-STREET CLEANING,Morning], 7.3%
+[Low Fine,Low Fine_Violation_21_NO PARKING-STREET CLEANING,Morning,Violation_21_NO PARKING-STREET CLEANING], 7.3%
+[Low Fine,Morning,Violation_21_NO PARKING-STREET CLEANING], 7.3%
+[Low Fine_Violation_21_NO PARKING-STREET CLEANING,Morning], 7.3%
+[Low Fine_Violation_21_NO PARKING-STREET CLEANING,Morning,Violation_21_NO PARKING-STREET CLEANING], 7.3%
+[Morning,Violation_21_NO PARKING-STREET CLEANING], 7.3%
+[Low Fine,Manhattan,Morning], 7.3%
+[High Fine,High Fine_Violation_40_FIRE HYDRANT,Morning], 7.1%
+[High Fine,High Fine_Violation_40_FIRE HYDRANT,Morning,Violation_40_FIRE HYDRANT], 7.1%
+[High Fine,Morning,Violation_40_FIRE HYDRANT], 7.1%
+[High Fine_Violation_40_FIRE HYDRANT,Morning], 7.1%
+[High Fine_Violation_40_FIRE HYDRANT,Morning,Violation_40_FIRE HYDRANT], 7.1%
+[Morning,Violation_40_FIRE HYDRANT], 7.1%
+[High Fine,Morning,Sedan], 7.0%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,SUV], 6.9%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 6.9%
+[Medium Fine,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 6.9%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,SUV], 6.9%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 6.9%
+[SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 6.9%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Night], 6.8%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Night,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.8%
+[Low Fine,Night,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.8%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Night], 6.8%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Night,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.8%
+[Night,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.8%
+[High Fine,High Fine_Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[High Fine,High Fine_Violation_14_NO STANDING-DAY/TIME LIMITS,Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[High Fine,Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[High Fine_Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[High Fine_Violation_14_NO STANDING-DAY/TIME LIMITS,Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[Violation_14_NO STANDING-DAY/TIME LIMITS], 6.8%
+[Low Fine,Manhattan,SUV], 6.7%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Sedan], 6.6%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Sedan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Low Fine,Sedan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Sedan], 6.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Sedan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Sedan,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,SUV], 6.6%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Low Fine,Morning,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,SUV], 6.6%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Morning,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 6.6%
+[Brooklyn,Low Fine], 6.6%
+[Low Fine,Morning,Sedan], 6.6%
+[Brooklyn,High Fine], 6.4%
+[Manhattan,Medium Fine,Morning], 6.4%
+[Van], 6.3%
+[High Fine,Queens], 6.3%
+[Morning,Queens,Sedan], 6.2%
+[Manhattan,Morning,Sedan], 6.1%
+[Medium Fine,Morning,Queens], 5.9%
+[Night,Queens], 5.9%
+[Medium Fine,Night,SUV], 5.9%
+[High Fine,Manhattan,Morning], 5.9%
+[Low Fine,Night,SUV], 5.8%
+[Low Fine,Morning,Queens], 5.6%
+[Manhattan,Night,SUV], 5.6%
+[Bronx,Morning,Sedan], 5.4%
+[Bronx,Medium Fine,Sedan], 5.3%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,SUV], 5.2%
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine,Morning,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,SUV], 5.2%
+[Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 5.2%
+[Morning,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING], 5.2%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Queens], 5.2%
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Queens,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 5.2%
+[Low Fine,Queens,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 5.2%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Queens], 5.2%
+[Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Queens,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 5.2%
+[Medium Fine,Medium Fine_Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine,Medium Fine_Violation_70_REG. STICKER-EXPIRED/MISSING,Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine,Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine_Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Medium Fine_Violation_70_REG. STICKER-EXPIRED/MISSING,Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Queens,Violation_38_FAIL TO DSPLY MUNI METER RECPT], 5.2%
+[Violation_70_REG. STICKER-EXPIRED/MISSING], 5.2%
+[Bronx,Medium Fine,Night], 5.2%
+[Brooklyn,Morning,Sedan], 5.2%
+[High Fine,Manhattan,SUV], 5.1%
+[Brooklyn,Medium Fine,Morning], 5.1%
+[Low Fine,Queens,SUV], 5.0%
+[Manhattan,Medium Fine,SUV], 5.0%
+
+==High-confidence association rules (min_conf=50.0%)
+[Medium Fine,Medium Fine_Violation_36_PHTO SCHOOL ZN SPEED VIOLATION,Violation_36_PHTO SCHOOL ZN SPEED VIOLATION] => [Bronx] (Conf: 100.0%, Supp: 8.1%)
+[Low Fine,Low Fine_Violation_21_NO PARKING-STREET CLEANING,Violation_21_NO PARKING-STREET CLEANING] => [Morning] (Conf: 90.1%, Supp: 7.3%)
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,SUV,Violation_71_INSP. STICKER-EXPIRED/MISSING] => [Morning] (Conf: 76.1%, Supp: 5.2%)
+[High Fine,High Fine_Violation_40_FIRE HYDRANT,Violation_40_FIRE HYDRANT] => [Morning] (Conf: 72.7%, Supp: 7.1%)
+[Medium Fine,Queens] => [Morning] (Conf: 72.2%, Supp: 5.9%)
+[Manhattan,Medium Fine] => [Morning] (Conf: 71.4%, Supp: 6.4%)
+[Queens,Sedan] => [Morning] (Conf: 70.9%, Supp: 6.2%)
+[Brooklyn,Sedan] => [Morning] (Conf: 69.6%, Supp: 5.2%)
+[Bronx,Night] => [Medium Fine] (Conf: 69.4%, Supp: 5.2%)
+[Brooklyn,Medium Fine] => [Morning] (Conf: 68.2%, Supp: 5.1%)
+[Brooklyn,SUV] => [Morning] (Conf: 67.1%, Supp: 8.1%)
+[Queens,SUV] => [Morning] (Conf: 66.7%, Supp: 8.3%)
+[High Fine,Sedan] => [Morning] (Conf: 66.5%, Supp: 7.0%)
+[Medium Fine,Sedan] => [Morning] (Conf: 66.5%, Supp: 9.7%)
+[Low Fine,Queens] => [Morning] (Conf: 65.7%, Supp: 5.6%)
+[Low Fine,Sedan] => [Morning] (Conf: 63.7%, Supp: 6.6%)
+[Bronx,SUV] => [Medium Fine] (Conf: 62.9%, Supp: 8.1%)
+[High Fine,SUV] => [Morning] (Conf: 61.4%, Supp: 8.7%)
+[Bronx,Sedan] => [Morning] (Conf: 61.3%, Supp: 5.4%)
+[Manhattan,Sedan] => [Morning] (Conf: 61.0%, Supp: 6.1%)
+[Low Fine,Night] => [SUV] (Conf: 60.9%, Supp: 5.8%)
+[Bronx,Sedan] => [Medium Fine] (Conf: 60.5%, Supp: 5.3%)
+[Bronx,SUV] => [Morning] (Conf: 59.3%, Supp: 7.6%)
+[Manhattan,SUV] => [Morning] (Conf: 59.2%, Supp: 10.0%)
+[Low Fine,Queens] => [SUV] (Conf: 59.2%, Supp: 5.0%)
+[Brooklyn,Morning] => [SUV] (Conf: 58.2%, Supp: 8.1%)
+[Low Fine,Manhattan] => [Morning] (Conf: 57.8%, Supp: 7.3%)
+[Bronx,Morning] => [Medium Fine] (Conf: 57.7%, Supp: 8.0%)
+[High Fine,Manhattan] => [Morning] (Conf: 57.1%, Supp: 5.9%)
+[Manhattan,Night] => [SUV] (Conf: 56.9%, Supp: 5.6%)
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,Morning,Violation_38_FAIL TO DSPLY MUNI METER RECPT] => [SUV] (Conf: 56.7%, Supp: 6.6%)
+[Manhattan,Medium Fine] => [SUV] (Conf: 56.2%, Supp: 5.0%)
+[Bronx,Medium Fine] => [SUV] (Conf: 56.0%, Supp: 8.1%)
+[Medium Fine,Medium Fine_Violation_71_INSP. STICKER-EXPIRED/MISSING,Morning,Violation_71_INSP. STICKER-EXPIRED/MISSING] => [SUV] (Conf: 55.9%, Supp: 5.2%)
+[Low Fine,Low Fine_Violation_38_FAIL TO DSPLY MUNI METER RECPT,SUV,Violation_38_FAIL TO DSPLY MUNI METER RECPT] => [Morning] (Conf: 55.6%, Supp: 6.6%)
+[Bronx,Medium Fine] => [Morning] (Conf: 55.5%, Supp: 8.0%)
+[Medium Fine,Night] => [SUV] (Conf: 55.5%, Supp: 5.9%)
+[Bronx,Morning] => [SUV] (Conf: 54.9%, Supp: 7.6%)
+[Morning,Queens] => [SUV] (Conf: 53.5%, Supp: 8.3%)
+[Low Fine,Manhattan] => [SUV] (Conf: 53.3%, Supp: 6.7%)
+[Manhattan,Morning] => [SUV] (Conf: 51.1%, Supp: 10.0%)
