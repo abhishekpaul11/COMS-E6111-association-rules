@@ -73,7 +73,7 @@ If not, you can get it from [Python Downloads](https://www.python.org/downloads/
 The dataset used to generate the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv) file is:
 
 **Title:** [Parking Violations Issued - Fiscal Year 2024](https://data.cityofnewyork.us/City-Government/Parking-Violations-Issued-Fiscal-Year-2024/pvqr-7yc4)  
-**Publisher:** New York City Open Data  
+**Publisher:** [New York City Open Data](https://opendata.cityofnewyork.us/data/)  
 **Date Filter:** March 1st, 2025
 **Format:** CSV  
 **Record Count:** 43,327 rows
