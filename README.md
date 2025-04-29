@@ -83,30 +83,30 @@ The dataset used to generate the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv
 To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following high-level preprocessing and transformation steps were applied:
 
 1. **Filtering by Date**
-   - Only records where the `Issue Date` is **March 1st, 2025** were retained. <br>
+- Only records where the `Issue Date` is **March 1st, 2025** were retained. <br>
 <br>
 
 2. **Violation Code Mapping**
-   - A secondary reference file, [ParkingViolationCodes_January2020.xlsx](/data/ParkingViolationCodes_January2020.xlsx), available as an attachment in the primary dataset page itself was used to map:
-     - `Violation Code` → `Violation Description`
-     - `Violation Code` → `Fine Amount`
-   - Mappings were applied to create human-readable and discretized categories. <br>
+- A secondary reference file, [ParkingViolationCodes_January2020.xlsx](/data/ParkingViolationCodes_January2020.xlsx), available as an attachment in the primary dataset page itself was used to map:
+  - `Violation Code` → `Violation Description`
+  - `Violation Code` → `Fine Amount`
+- Mappings were applied to create human-readable and discretized categories. <br>
 <br>
 
 3. **Attribute Transformation and Discretization**
-   - **Time Discretization**
-     - `Violation Time` was parsed and categorized into four bins: `Morning`, `Afternoon`, `Evening`, and `Night`. <br>
+- **Time Discretization**
+  - `Violation Time` was parsed and categorized into four bins: `Morning`, `Afternoon`, `Evening`, and `Night`. <br>
 <br>
 
-4. **Fine Discretization**
+   - **Fine Discretization**
      - Fines were bucketed into `Low Fine` (<$50), `Medium Fine` ($50–$100), and `High Fine` (>$100). <br>
 <br>
 
-5. **Vehicle Type Standardization**
+- **Vehicle Type Standardization**
      - Vehicle body types (e.g., `SDN`, `SUBN`, `VAN`, `PICK`) were mapped to generalized types like `Sedan`, `SUV`, `Van`, `Pickup`, etc. <br>
 <br>
 
-6. **Geographic Mapping**
+- **Geographic Mapping**
      - The `Violation County` was mapped to the corresponding NYC borough using a fixed lookup table:
        - `NY` -> `Manhattan`
        - `MN` -> `Manhattan`
@@ -122,18 +122,18 @@ To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following
        - `ST` -> `Staten Island` <br>
 <br>
 
-5. **Row Filtering for Completeness and Usefulness**
-   - Rows missing critical information were excluded.
-   - Transactions were required to contain **at least 4 informative attributes** and exclude vague categories like `"Unknown"` or `"Other"` vehicle types. <br>
+4. **Row Filtering for Completeness and Usefulness**
+- Rows missing critical information were excluded.
+- Transactions were required to contain **at least 4 informative attributes** and exclude vague categories like `"Unknown"` or `"Other"` vehicle types. <br>
 <br>
 
-6. **Final Transaction Format**
-   - Each row in [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv) represents a "market basket" in the form of:
-     ```csv
-     Borough,Time Period,Fine Level,Vehicle Type,Violation Code,Violation Description
-     ```
-   - All entries are comma-separated on a single line.
-   - The final file has around 33,435 transactions are pre-processing 43,327 rows.
+5. **Final Transaction Format**
+- Each row in [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv) represents a "market basket" in the form of:
+  ```csv
+  Borough,Time Period,Fine Level,Vehicle Type,Violation Code,Violation Description
+  ```
+- All entries are comma-separated on a single line.
+- The final file has around 33,435 transactions are pre-processing 43,327 rows.
 
 
 ### (c) Justification for Dataset Choice
