@@ -66,10 +66,18 @@ def map_county_to_borough(county):
         return None
     county = county.upper()
     county_to_borough = {
-        'NY': 'Manhattan', 'K': 'Brooklyn', 'Q': 'Queens',
-        'BX': 'Bronx', 'R': 'Staten Island',
-        'BRONX': 'Bronx', 'BROOKLYN': 'Brooklyn', 'QUEENS': 'Queens',
-        'MANHATTAN': 'Manhattan', 'STATEN ISLAND': 'Staten Island'
+        'NY': 'Manhattan',
+        'MN': 'Manhattan',
+        'BK': 'Brooklyn',
+        'K': 'Brooklyn',
+        'Kings': 'Brooklyn',
+        'QN': 'Queens',
+        'Q': 'Queens',
+        'Qns': 'Queens',
+        'BX': 'Bronx',
+        'Bronx': 'Bronx',
+        'R': 'Staten Island',
+        'ST': 'Staten Island'
     }
     return county_to_borough.get(county, None)
 
