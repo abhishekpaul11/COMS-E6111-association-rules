@@ -97,13 +97,16 @@ To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following
    - **Time Discretization**
      - `Violation Time` was parsed and categorized into four bins: `Morning`, `Afternoon`, `Evening`, and `Night`. <br>
 <br>
-   - **Fine Discretization**
+
+4. **Fine Discretization**
      - Fines were bucketed into `Low Fine` (<$50), `Medium Fine` ($50–$100), and `High Fine` (>$100). <br>
 <br>
-   - **Vehicle Type Standardization**
+
+5. **Vehicle Type Standardization**
      - Vehicle body types (e.g., `SDN`, `SUBN`, `VAN`, `PICK`) were mapped to generalized types like `Sedan`, `SUV`, `Van`, `Pickup`, etc. <br>
 <br>
-   - **Geographic Mapping**
+
+6. **Geographic Mapping**
      - The `Violation County` was mapped to the corresponding NYC borough using a fixed lookup table:
        - `NY` -> `Manhattan`
        - `MN` -> `Manhattan`
@@ -119,12 +122,12 @@ To construct the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv), the following
        - `ST` -> `Staten Island` <br>
 <br>
 
-4. **Row Filtering for Completeness and Usefulness**
+5. **Row Filtering for Completeness and Usefulness**
    - Rows missing critical information were excluded.
    - Transactions were required to contain **at least 4 informative attributes** and exclude vague categories like `"Unknown"` or `"Other"` vehicle types. <br>
 <br>
 
-5. **Final Transaction Format**
+6. **Final Transaction Format**
    - Each row in [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv) represents a "market basket" in the form of:
      ```csv
      Borough,Time Period,Fine Level,Vehicle Type,Violation Code,Violation Description
@@ -152,14 +155,14 @@ This combination of depth, breadth, and real-world relevance makes it ideal for 
 The project implements the Apriori algorithm to mine frequent itemsets and generate association rules from the [INTEGRATED-DATASET.csv](INTEGRATED-DATASET.csv). The implementation follows the standard Apriori framework as mentioned in Section 2.1.1. in [Fast Algorithms for Mining Association Rules by Agrawal and Srikant](https://www.cs.columbia.edu/~gravano/Qual/Papers/agrawal94.pdf), but includes optimizations and variations to handle the large dataset efficiently. The core components are:
 
 ### Data Loading
-The `load_transactions()` function reads the INTEGRATED-DATASET CSV file and loads transactions into memory as a list of sets for faster processing. It also identifies frequent 1-itemsets during this step to bootstrap the Apriori process.
+The [load_transactions()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L6) function reads the INTEGRATED-DATASET CSV file and loads transactions into memory as a list of sets for faster processing. It also identifies frequent 1-itemsets during this step to bootstrap the Apriori process.
 
 ### Frequent Itemset Generation
-The `apriori()` function iteratively generates frequent itemsets using the `generate_candidates()` function, which includes a pruning step (as confirmed in the previous response). The pruning ensures that only candidates with all frequent (k-1)-subsets are evaluated, reducing the search space.<br><br>
-The `count_support()` function computes the support of candidate itemsets by scanning the transactions, and `filter_frequent_itemsets()` retains those above the minimum support threshold.
+The [apriori()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L97) function iteratively generates frequent itemsets using the [generate_candidates()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L54) function, which includes a pruning step (as confirmed in the previous response). The pruning ensures that only candidates with all frequent (k-1)-subsets are evaluated, reducing the search space.<br><br>
+The [count_support()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L37) function computes the support of candidate itemsets by scanning the transactions, and [filter_frequent_itemsets()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L47) retains those above the minimum support threshold.
 
 ### Rule Generation
-The `get_rules()` function generates association rules from frequent itemsets by computing confidence and filtering rules above the minimum confidence threshold. It uses support values directly, avoiding additional transaction scans.
+The [get_rules()](https://github.com/abhishekpaul11/COMS-E6111-association-rules/blob/a8207996fefed348edd7f3dd765a138e0412b341/main.py#L131) function generates association rules from frequent itemsets by computing confidence and filtering rules above the minimum confidence threshold. It uses support values directly, avoiding additional transaction scans.
 
 ### Output
 The results (frequent itemsets and rules) are written to an [output.txt](output.txt) file, formatted as specified, with support percentages and confidence for rules.
@@ -193,9 +196,7 @@ Several sophisticated enhancements were implemented based on Chapter 6 of [Minin
 
    - Skipped rules where the RHS was implied by the LHS due to hierarchical structure.
    - Example excluded rule:
-     ```
-     [MediumFine_Violation_14_..., Sedan, Violation_14_...] => [MediumFine]
-     ```
+     `[MediumFine_Violation_14_..., Sedan, Violation_14_...] => [MediumFine]`
    - Skipped any rule where RHS was `"Low Fine"`, `"Medium Fine"`, or `"High Fine"` **already encoded in the LHS**.<br><br>
 
     **Justification**
